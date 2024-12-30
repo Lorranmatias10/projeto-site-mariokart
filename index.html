@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Super Mario Kart </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="caixa-video-mario">
+
+        <video src="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="caixa-principal"><img src="logo.png" alt="logo do surper mario" class="LG">
+
+
+        <p>Desenvolvido pela Nintendo Research & Development
+            4 e publicado pela Nintendo para o Famicom em 1985 no Japão
+            e para o Nintendo Entertainment System (NES) em 1985 e 1987
+            na América do Norte e Europa, respectivamente.
+            É o sucessor do jogo de arcade Mario Bros., de 1983.
+            Os jogadores controlam Mario, ou seu irmão Luigi no modo multijogador,
+            enquanto viajam pelo Reino Cogumelo para resgatar a Princesa Peach de Bowser.
+            Eles devem percorrer os mundos em uma visão em rolagem lateral,
+            evitando perigos como inimigos e buracos com a ajuda de
+            potencializadores como o Supercogumelo, Flor de Fogo e Superestrela.</p>
+
+        <button onclick="cliqueiNoBotao()"> FALE CONOSCO </button>
+    </div>
+
+
+    <img src="mario.png" alt="logo mario e luide" class="SM">
+
+    <form class="fale-conosco" action="https://formsubmit.co/your@email.com" method="POST">
+
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu Telefone" type="tel" name="Telefone">
+        <input placeholder="Email" type="email" name="email">
+        <textarea placeholder="Comentarios" name="Comentarios"></textarea>
+        <button onclick="SumirFormulario()">Enviar Formulario</button>
+
+
+    </form>~
+
+    <div class="mascara-form"> </div>
+
+
+</body>
+
+<script>
+
+
+    let Formulario = document.querySelector(".fale-conosco")
+    console.log(Formulario)
+    let mascara = document.querySelector(".mascara-form")
+
+    function cliqueiNoBotao() {
+
+        console.log("cliquei no botao")
+        Formulario.style.left ="1000px"
+        mascara.style.visibility ="visible"
+
+        }
+
+        function SumirFormulario(){
+            Formulario.style.left ="-1000px"
+            mascara.style.visibility ="hidden"
+
+
+
+        }
+
+
+
+</script>
+
+
+
+</html>
